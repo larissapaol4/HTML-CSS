@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi error eum sed vero praesentium earum dolorum alias voluptatum dolores? Consequuntur animi beatae dicta ad harum eum dolores blanditiis quam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto amet eaque totam rerum soluta, fugit quod sit! Recusandae quidem odio hic tempore delectus in blanditiis consequuntur, dolor iure laboriosam! Repellat.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab corrupti impedit totam quia eos amet, accusantium obcaecati expedita animi sint, incidunt ipsum, deleniti quaerat minus magnam fuga temporibus nihil necessitatibus.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita est sapiente, reiciendis natus accusamus, vero eveniet laboriosam labore iusto, quo asperiores sint eos similique perferendis molestias molestiae amet illo unde!
+
+            </p>
+
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero aspernatur repellat odio praesentium cupiditate repudiandae rerum officiis illum, quisquam earum quam nostrum blanditiis architecto, velit reiciendis fuga laborum ipsam voluptas?
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+           if(itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+           }
+        }
+    </script>
+</body>
+</html>
