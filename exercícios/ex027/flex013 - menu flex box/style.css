@@ -14,29 +14,121 @@ body {
     width: 100vw;
 }
 
+p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
 header {
     background-color: rgba(128, 128, 128, 0.575);
     color: white;
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 header > h1 {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
+    flex: 0 0 200px;
 }
 
 header > nav {
-    border: 1px dotted black; 
+    /*border: 1px dotted black;*/ 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
 }
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+a#cor1:hover {
+    background-color: brown;
+}
+
+a#cor2:hover {
+    background-color: green;
+}
+
+a#cor3:hover {
+    background-color: burlywood;
+}
+
+a#cor4:hover {
+    background-color: rgba(114, 215, 255, 0.959);
+}
+
+a#cor5:hover {
+    background-color: rgba(236, 65, 22, 0.61);
+}
+
+a#cor6:hover {
+    background-color:rgb(197, 56, 5);
+}
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .4s;
+}
+
+
 h2 {
     text-align: center;
     padding: 10px;
 }
- main p {
-    
- }
+
 main {
     background-color:  white;
-    margin: 10px;
+    margin: auto;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.589);
+    max-width: 700px;
+    min-width: 300px;
+
+}
+
+main > img {
+    height: 350px;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+main img.pequena {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+footer > p {
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+footer > p > a:hover {
+    background-color: rgb(204, 129, 204);
+    color: black;
 }
